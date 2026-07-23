@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 public interface BankDao {
-
     void register(UserDto user);
 
     void getDetailsByEmail(String gmail);
