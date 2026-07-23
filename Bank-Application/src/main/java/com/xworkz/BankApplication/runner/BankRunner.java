@@ -3,6 +3,7 @@ package com.xworkz.BankApplication.runner;
 import com.xworkz.BankApplication.Dto.UserDto;
 import com.xworkz.BankApplication.constant.AccountType;
 import com.xworkz.BankApplication.controller.BankController;
+import com.xworkz.BankApplication.controller.ManagerController;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +15,7 @@ public class BankRunner {
     public static void main(String[] args) {
 
         BankController controller = new BankController();
+        ManagerController mController = new ManagerController();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Hi... Welcome to Bank");
@@ -23,7 +25,7 @@ public class BankRunner {
         while(isRunning){
             System.out.println("=====Plz Authenticate yourself=====\n");
             System.out.println("1.User");
-            System.out.println("1.Manager");
+            System.out.println("2.Manager");
             System.out.println("Enter Your choice 1 or 2:");
 
             int choice =sc.nextInt();
