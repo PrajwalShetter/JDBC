@@ -374,6 +374,7 @@ public class BankDaoImpl implements BankDao {
 
                 if(row>0){
                     System.out.println("update done .....");
+                    return true;
                 }
                 else {
                     System.out.println("update failed ........");
@@ -503,6 +504,7 @@ public class BankDaoImpl implements BankDao {
 
         if(id != 0){
             try{
+
                 forName("com.mysql.cj.jdbc.Driver");
                 connection = DriverManager.getConnection(url,user,password);
                 String sql ="SELECT name,balance FROM user WHERE customer_id =?";
