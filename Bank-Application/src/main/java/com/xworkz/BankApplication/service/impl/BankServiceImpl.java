@@ -113,7 +113,7 @@ public class BankServiceImpl implements BankService {
 
     @Override
     public boolean deleteUserById(int id) {
-        return dao.deleteMeById(id);
+        return dao.deleteUserById(id);
     }
 
     @Override
